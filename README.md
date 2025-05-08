@@ -1,126 +1,157 @@
-# Week 7 Assignment: Analyzing Data with Pandas and Visualizing Results with Matplotlib
+---
+# 📊 Week 7 Assignment: Analyzing Data with Pandas and Visualizing Results with Matplotlib
 
 ## 📌 Objective
 
 This project demonstrates how to:
 
-- Load and process a dataset using the `pandas` library.
-- Perform grouping and analysis using pandas operations.
-- Visualize the results using `matplotlib`.
-- Safely execute code with error handling and save plots to file.
-
+* Load and process a dataset using the `pandas` library.
+* Perform grouping and statistical analysis.
+* Visualize the results using `matplotlib` and `seaborn`.
+* Handle errors gracefully and save plots to files.
+---
 ## 📂 Dataset Used
 
-The **Iris dataset**, a widely used dataset in machine learning, is used for this analysis. It includes:
+The **Iris dataset**, a classic dataset used in machine learning, includes:
 
-- Sepal length (cm)
-- Sepal width (cm)
-- Petal length (cm)
-- Petal width (cm)
+* Features:
 
-Classes:
+  * Sepal length (cm)
+  * Sepal width (cm)
+  * Petal length (cm)
+  * Petal width (cm)
+* Classes:
 
-- Setosa
-- Versicolor
-- Virginica
+  * Setosa
+  * Versicolor
+  * Virginica
 
-Loaded via:
+**Loaded via:**
 
-> from sklearn.datasets import load_iris
+```python
+from sklearn.datasets import load_iris
+```
 
-**🧪 Task Overview
-✅ Load and Explore Data**
+---
 
-> Loaded the dataset using pandas.
+## 🧪 Task Overview
 
-> Converted target values to species names using pd.Categorical.
+### ✅ Load and Explore Data
 
-> Grouped data by species to compute mean values.
+* Loaded the dataset using pandas.
+* Converted numeric targets to species names using `pd.Categorical`.
+* Grouped data by species and computed mean values.
 
-**✅ Visualizations Created**
+### ✅ Visualizations Created
 
-> Line Chart – Average Petal Length per Species
+* 📈 Line Chart – Average Petal Length per Species
+* 📊 Bar Chart – Average Sepal Width per Species
+* 📉 Histogram – Distribution of Sepal Length
+* 🔵 Scatter Plot – Sepal Length vs Petal Length by Species
 
-> Bar Chart – Average Sepal Width per Species
+---
 
-> Histogram – Distribution of Sepal Length
+## 💻 How to Run the Code
 
-> Scatter Plot – Sepal Length vs Petal Length per Species
+### 🔧 Install Required Libraries
 
-**💻 How to Run the Code**
+```bash
+pip install pandas matplotlib seaborn scikit-learn
+```
 
-Make sure the required packages are installed:
+### 🏃‍♂️ Run the Script
 
-> pip install pandas matplotlib searbon scikit-learn
+Depending on your operating system:
 
-Then run the script depending on your OS(Operating System):
+#### 💻 Windows
 
-**🏃‍♂️ How to Run the Script**
+Open CMD or PowerShell in the script folder:
 
-You can run the script in several ways depending on your operating system or code editor setup:
+```bash
+python assignment-7.py
+```
 
-**💻 Windows**
+Or in **Visual Studio Code**, press:
 
-Open a terminal (CMD or PowerShell), navigate to the script folder, then run:
+```
+Ctrl + Alt + N
+```
 
-> python assignment-7.py
+(Requires the *Code Runner* extension)
 
-Or, if using Visual Studio Code, press:
+#### 🐧 Linux
 
-> Ctrl + Alt + N
+In terminal:
 
-(Requires the Code Runner extension)
+```bash
+python3 assignment-7.py
+```
 
-**🐧 Linux**
+Or in VS Code:
 
-Open a terminal and run:
+```
+Ctrl + Alt + N
+```
 
-> python3 assignment-7.py
+#### 🍎 macOS
 
-In VS Code with Code Runner installed, press:
+In terminal:
 
-> Ctrl + Alt + N
+```bash
+python3 assignment-7.py
+```
 
-**🍎 macOS**
+Or in VS Code:
 
-Open Terminal and run:
+```
+Ctrl + Option + N
+```
 
-> python3 assignment-7.py
+---
 
-In VS Code, you can also press:
-
-> Ctrl + Option + N
-
-✅ Note: Make sure you have Python and required libraries (pandas, matplotlib, scikit-learn) installed.
-
-If successful, it will print:
-
-> Plots saved successfully to iris_plots.pdf and iris_plots.png
-
-🖼️ **Output**
+## 🖼️ Output
 
 The script saves the visualizations as:
 
-> iris_plots.pdf
-> iris_plots.png
+```
+Plots saved successfully at 2025-05-08_15-36-13.
 
-They are created using matplotlib.use('Agg') so it works in non-GUI environments.
+Visualizations saved successfully:
+- PDF: iris_analysis_report_2025-05-08_15-36-13.pdf
+- PNG: iris_analysis_report_2025-05-08_15-36-13.png
+```
 
-**✅ Error Handling**
+> ✅ Note: The script uses `matplotlib.use('Agg')` so it works in headless (non-GUI) environments.
 
-The script uses a try-except block to handle any exceptions during data processing or saving.
+---
 
-**📎 Requirements**
+## ⚠️ Error Handling
 
-> Python 3.x
-> pandas
-> matplotlib
->
-> searbon
-> scikit-learn
+Robust `try-except` blocks handle:
 
-**🧑‍💻 Author**
+* File permission errors
+* Plotting issues
+* Data processing errors
 
-> Prepared by: Silas HAKUZWIMANA
-> PLP - February 2025 Cohort
-> Module: Python
+Any issues are printed to the terminal with meaningful messages.
+
+---
+
+## 📎 Requirements
+
+* Python 3.x
+* `pandas`
+* `matplotlib`
+* `seaborn`
+* `scikit-learn`
+
+---
+
+## 🧑‍💻 Author
+
+**Prepared by:**
+**Silas HAKUZWIMANA**
+*PLP – February 2025 Cohort*
+*Module: Python*
+
+---
