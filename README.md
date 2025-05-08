@@ -1,4 +1,3 @@
-
 # Week 7 Assignment: Analyzing Data with Pandas and Visualizing Results with Matplotlib
 
 ## 📌 Objective
@@ -32,7 +31,6 @@ Loaded via:
 **🧪 Task Overview
 ✅ Load and Explore Data**
 
-
 > Loaded the dataset using pandas.
 
 > Converted target values to species names using pd.Categorical.
@@ -51,7 +49,6 @@ Loaded via:
 
 **💻 How to Run the Code**
 
-
 Make sure the required packages are installed:
 
 > pip install pandas matplotlib searbon scikit-learn
@@ -60,11 +57,9 @@ Then run the script depending on your OS(Operating System):
 
 **🏃‍♂️ How to Run the Script**
 
-
 You can run the script in several ways depending on your operating system or code editor setup:
 
 **💻 Windows**
-
 
 Open a terminal (CMD or PowerShell), navigate to the script folder, then run:
 
@@ -104,7 +99,6 @@ If successful, it will print:
 
 🖼️ **Output**
 
-
 The script saves the visualizations as:
 
 > iris_plots.pdf
@@ -114,7 +108,6 @@ They are created using matplotlib.use('Agg') so it works in non-GUI environments
 
 **✅ Error Handling**
 
-
 The script uses a try-except block to handle any exceptions during data processing or saving.
 
 **📎 Requirements**
@@ -122,11 +115,12 @@ The script uses a try-except block to handle any exceptions during data processi
 > Python 3.x
 > pandas
 > matplotlib
+>
+> searbon
 > scikit-learn
 
 **🧑‍💻 Author**
 
->
 > Prepared by: Silas HAKUZWIMANA
 > PLP - February 2025 Cohort
 > Module: Python
