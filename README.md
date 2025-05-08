@@ -1,4 +1,3 @@
----
 # 📊 Week 7 Assignment: Analyzing Data with Pandas and Visualizing Results with Matplotlib
 
 ## 📌 Objective
@@ -9,7 +8,7 @@ This project demonstrates how to:
 * Perform grouping and statistical analysis.
 * Visualize the results using `matplotlib` and `seaborn`.
 * Handle errors gracefully and save plots to files.
----
+
 ## 📂 Dataset Used
 
 The **Iris dataset**, a classic dataset used in machine learning, includes:
@@ -140,10 +139,10 @@ Any issues are printed to the terminal with meaningful messages.
 ## 📎 Requirements
 
 * Python 3.x
-* `pandas`
-* `matplotlib`
-* `seaborn`
-* `scikit-learn`
+* pandas
+* matplotlib
+* seaborn
+* scikit-learn
 
 ---
 
